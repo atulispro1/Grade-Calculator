@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grade Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Grade Calculator</h1>
+    <p class="subheading">Enter your marks (out of 100) for each subject below.</p>
+    <form id="marksForm" autocomplete="off">
+      <div class="input-row">
+        <label for="maths">Maths</label>
+        <input type="number" id="maths" name="Maths" min="0" max="100" required>
+      </div>
+      <div class="input-row">
+        <label for="science">Science</label>
+        <input type="number" id="science" name="Science" min="0" max="100" required>
+      </div>
+      <div class="input-row">
+        <label for="english">English</label>
+        <input type="number" id="english" name="English" min="0" max="100" required>
+      </div>
+      <div class="input-row">
+        <label for="sst">SST</label>
+        <input type="number" id="sst" name="Sst" min="0" max="100" required>
+      </div>
+      <div class="input-row">
+        <label for="computer">Computer/IT</label>
+        <input type="number" id="computer" name="Computer/IT" min="0" max="100" required>
+      </div>
+      <button type="submit" id="calcBtn">Calculate 📊</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </form>
+    <div id="results" class="results hidden">
+      <h2>📋 Your Results</h2>
+      <ul id="marksList"></ul>
+      <div class="summary">
+        <p id="total"></p>
+        <p id="average"></p>
+        <p id="grade"></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
